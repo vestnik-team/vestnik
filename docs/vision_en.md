@@ -31,6 +31,7 @@ It is important to test in advance the conversion of real manuscripts to JATS XM
 The system should also serve as a foundation for further development. Possible extensions:
 
 - migrating the archive of the old website;
+- support for other series of the journal on the same platform;
 - the ability to handle an article entirely via email;
 - plagiarism checking of manuscripts.
 
