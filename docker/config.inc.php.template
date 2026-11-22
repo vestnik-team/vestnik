@@ -1,0 +1,23 @@
+; <?php exit; ?>
+; Значения ниже дополняют штатный config.inc.php из образа OJS.
+[general]
+base_url = OJS_BASE_URL
+allowed_hosts = OJS_ALLOWED_HOSTS
+
+[database]
+driver = mysqli
+host = OJS_DB_HOST
+port = OJS_DB_PORT
+username = OJS_DB_USER
+password = OJS_DB_PASSWORD
+name = OJS_DB_NAME
+
+[files]
+files_dir = /var/www/files
+
+[email]
+default = OJS_MAIL_DRIVER
+smtp_server = SMTP_HOST
+smtp_port = SMTP_PORT
+smtp_username = SMTP_USER
+smtp_password = SMTP_PASSWORD

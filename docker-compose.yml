@@ -1,0 +1,68 @@
+name: vestnik-team-ojs
+
+services:
+  db:
+    image: mariadb:10.11
+    environment:
+      MARIADB_DATABASE: ${OJS_DB_NAME:?Set OJS_DB_NAME in .env}
+      MARIADB_USER: ${OJS_DB_USER:?Set OJS_DB_USER in .env}
+      MARIADB_PASSWORD: ${OJS_DB_PASSWORD:?Set OJS_DB_PASSWORD in .env}
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?Set DB_ROOT_PASSWORD in .env}
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: [CMD, healthcheck.sh, --connect, --innodb_initialized]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    restart: unless-stopped
+
+  ojs:
+    image: pkpofficial/ojs:3_5_0-5
+    platform: linux/amd64
+    user: "0:0"
+    environment:
+      OJS_BASE_URL: ${OJS_BASE_URL:?Set OJS_BASE_URL}
+      OJS_DB_HOST: ${OJS_DB_HOST:-db}
+      OJS_DB_PORT: ${OJS_DB_PORT:-3306}
+      OJS_DB_NAME: ${OJS_DB_NAME:?Set OJS_DB_NAME}
+      OJS_DB_USER: ${OJS_DB_USER:?Set OJS_DB_USER}
+      OJS_DB_PASSWORD: ${OJS_DB_PASSWORD:?Set OJS_DB_PASSWORD}
+      OJS_ADMIN_USER: ${OJS_ADMIN_USER:-admin}
+      OJS_ADMIN_EMAIL: ${OJS_ADMIN_EMAIL:-admin@example.test}
+      OJS_ADMIN_PASSWORD: ${OJS_ADMIN_PASSWORD:-}
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      SERVERNAME: localhost
+      PKP_CONF: /var/www/html/config.inc.php
+      PKP_CLI_INSTALL: "0"
+    ports:
+      - "127.0.0.1:8080:80"
+    volumes:
+      - ojs_app:/var/www/html
+      - ojs_files:/var/www/files
+      - ./docker/bootstrap.php:/opt/vestnik/bootstrap.php:ro
+      - ./docker/config.inc.php.template:/opt/vestnik/config.inc.php.template:ro
+    command:
+      - sh
+      - -ec
+      - |
+        cd /var/www/html
+        test -f config.inc.php || cp config.TEMPLATE.inc.php config.inc.php
+        chown www-data:www-data /var/www/files config.inc.php
+        chmod 600 config.inc.php
+        su -s /bin/sh -c 'php /opt/vestnik/bootstrap.php' www-data
+        # Use file locks when running the image under AMD64 emulation.
+        printf '%s\n' 'Mutex fcntl:/var/lock/apache2 default' > /etc/apache2/conf-enabled/vestnik-local.conf
+        exec /usr/local/bin/pkp-start
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  db_data:
+  ojs_app:
+  ojs_files:
