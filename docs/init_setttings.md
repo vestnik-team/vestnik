@@ -1,6 +1,6 @@
 # Начальные настройки OJS
 
-При запуске контейнера `ojs` Docker Compose дожидается готовности MariaDB и вызывает `docker/bootstrap.php` до запуска Apache. Скрипт читает параметры из окружения контейнера, применяет `docker/config.inc.php.template` и записывает результат в `/var/www/html/config.inc.php`. Этот файл хранится в томе `ojs_app`.
+При запуске контейнера `ojs` Docker Compose дожидается готовности MariaDB и запускает `docker/entrypoint.sh`. До старта Apache этот скрипт подключает перечисленные в нём плагины и вызывает `docker/bootstrap.php`. Bootstrap читает параметры из окружения, применяет `docker/config.inc.php.template`, записывает `/var/www/html/config.inc.php` и регистрирует новые плагины. Файл конфигурации хранится в томе `ojs_app`.
 
 ## Только при первой установке
 
@@ -38,6 +38,7 @@
 
 ## Где посмотреть реализацию
 
-- [docker/bootstrap.php](../docker/bootstrap.php) — проверка состояния, вызов установщика и применение настроек.
+- [docker/entrypoint.sh](../docker/entrypoint.sh) — список плагинов и порядок запуска контейнера.
+- [docker/bootstrap.php](../docker/bootstrap.php) — проверка состояния, вызов установщика, применение настроек и регистрация плагинов.
 - [docker/config.inc.php.template](../docker/config.inc.php.template) — поля конфигурации, которыми управляет bootstrap.
 - [docker-compose.yml](../docker-compose.yml) — переменные окружения, их значения по умолчанию, тома и опубликованный порт.

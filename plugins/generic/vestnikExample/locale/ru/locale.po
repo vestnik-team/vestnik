@@ -1,0 +1,18 @@
+msgid ""
+msgstr ""
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.generic.vestnikExample.displayName"
+msgstr "Вестник — тестовое уведомление"
+
+msgid "plugins.generic.vestnikExample.description"
+msgstr "Каждые пять секунд показывает уведомление на панели редактора и в редакционном процессе рукописи."
+
+msgid "plugins.generic.vestnikExample.notice.message"
+msgstr "Плагин «Вестник» работает"
+
+msgid "plugins.generic.vestnikExample.notice.stop"
+msgstr "Остановить показ"

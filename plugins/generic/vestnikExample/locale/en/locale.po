@@ -1,0 +1,18 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.generic.vestnikExample.displayName"
+msgstr "Vestnik Test Notification"
+
+msgid "plugins.generic.vestnikExample.description"
+msgstr "Shows a notification every five seconds on the editorial dashboard and submission workflow."
+
+msgid "plugins.generic.vestnikExample.notice.message"
+msgstr "The Vestnik plugin is running"
+
+msgid "plugins.generic.vestnikExample.notice.stop"
+msgstr "Stop showing"

@@ -39,6 +39,45 @@ function writeSettings(array $settings): void
     }
 }
 
+function registerPlugins(mysqli $connection, array $plugins): void
+{
+    if (!$plugins) {
+        return;
+    }
+
+    $registered = $connection->prepare('SELECT 1 FROM versions WHERE product_type = ? AND product = ? AND `current` = 1 LIMIT 1');
+    foreach ($plugins as $path) {
+        [$category, $name] = explode('/', $path, 2);
+        $type = 'plugins.' . $category;
+        $registered->execute([$type, $name]);
+        if ($registered->get_result()->fetch_row()) {
+            continue;
+        }
+
+        $descriptor = "plugins/{$path}/version.xml";
+        $version = simplexml_load_file($descriptor, options: LIBXML_NONET);
+        if (!$version || (string)$version->application !== $name || (string)$version->type !== $type) {
+            throw new RuntimeException("Plugin name and category must match {$descriptor}");
+        }
+
+        $installer = proc_open(
+            [PHP_BINARY, 'lib/pkp/tools/installPluginVersion.php', $descriptor],
+            [STDIN, STDOUT, STDERR],
+            $pipes,
+        );
+        if (!is_resource($installer) || proc_close($installer) !== 0) {
+            throw new RuntimeException("Could not register OJS plugin {$path}");
+        }
+        $registered->execute([$type, $name]);
+        if (!$registered->get_result()->fetch_row()) {
+            throw new RuntimeException("OJS plugin {$path} has no registered version");
+        }
+        echo "Registered OJS plugin {$path}.\n";
+    }
+}
+
+$plugins = preg_split('/\s+/', trim(getenv('VESTNIK_PLUGINS') ?: ''), -1, PREG_SPLIT_NO_EMPTY);
+
 $url = getenv('OJS_BASE_URL');
 $host = parse_url($url, PHP_URL_HOST);
 if (!$host || !in_array(parse_url($url, PHP_URL_SCHEME), ['http', 'https'], true)) {
@@ -87,6 +126,7 @@ if ($config['general']['installed'] ?? false) {
         throw new RuntimeException('Missing OJS site data. Check the database volume.');
     }
     writeSettings($settings);
+    registerPlugins($connection, $plugins);
     echo "Existing OJS installation is ready.\n";
     exit(0);
 }
@@ -120,4 +160,5 @@ if (!$installer->execute() || !$installer->wroteConfig()) {
 }
 // The installer writes a URL based on its CLI request. Restore the configured URL.
 writeSettings($settings);
+registerPlugins($connection, $plugins);
 echo "OJS installed. Sign in with the administrator account from .env.\n";

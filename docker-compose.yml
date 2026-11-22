@@ -45,18 +45,9 @@ services:
       - ojs_files:/var/www/files
       - ./docker/bootstrap.php:/opt/vestnik/bootstrap.php:ro
       - ./docker/config.inc.php.template:/opt/vestnik/config.inc.php.template:ro
-    command:
-      - sh
-      - -ec
-      - |
-        cd /var/www/html
-        test -f config.inc.php || cp config.TEMPLATE.inc.php config.inc.php
-        chown www-data:www-data /var/www/files config.inc.php
-        chmod 600 config.inc.php
-        su -s /bin/sh -c 'php /opt/vestnik/bootstrap.php' www-data
-        # Use file locks when running the image under AMD64 emulation.
-        printf '%s\n' 'Mutex fcntl:/var/lock/apache2 default' > /etc/apache2/conf-enabled/vestnik-local.conf
-        exec /usr/local/bin/pkp-start
+      - ./docker/entrypoint.sh:/opt/vestnik/entrypoint.sh:ro
+      - ./plugins:/opt/vestnik/plugins:ro
+    command: ["/bin/sh", "/opt/vestnik/entrypoint.sh"]
     depends_on:
       db:
         condition: service_healthy
