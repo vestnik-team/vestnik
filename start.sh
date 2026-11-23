@@ -8,6 +8,7 @@ attempt=0
 while [ "$attempt" -lt 180 ]; do
     if curl --noproxy '*' --silent --fail --location --max-time 4 --output /dev/null "${url%/}/"; then
         printf '\n\nOJS готов → %s\n' "$url"
+        printf 'Mailpit → http://%s\n' "$(docker compose port mailpit 8025)"
         exit 0
     fi
     printf '.'
