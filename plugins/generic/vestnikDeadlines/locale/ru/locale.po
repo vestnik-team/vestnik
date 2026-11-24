@@ -1,0 +1,14 @@
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.generic.vestnikDeadlines.displayName"
+msgstr "Вестник — сроки и напоминания"
+
+msgid "plugins.generic.vestnikDeadlines.description"
+msgstr "Контроль сроков рецензирования и цепочка напоминаний рецензентам."
+
+msgid "plugins.generic.vestnikDeadlines.taskName"
+msgstr "Вестник: проба напоминания рецензенту"
