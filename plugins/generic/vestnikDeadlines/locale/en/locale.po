@@ -1,0 +1,14 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.generic.vestnikDeadlines.displayName"
+msgstr "Vestnik — Deadlines & Reminders"
+
+msgid "plugins.generic.vestnikDeadlines.description"
+msgstr "Review deadline tracking and automated reviewer reminders."
+
+msgid "plugins.generic.vestnikDeadlines.taskName"
+msgstr "Vestnik: reviewer reminder probe"
