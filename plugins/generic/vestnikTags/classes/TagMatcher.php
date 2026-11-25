@@ -6,8 +6,12 @@ class TagMatcher
 {
     /**
      * Сопоставляет теги статьи с тегами людей.
-    
-     * Возвращает людей, отсортированных по score.
+     * 
+     * @param array $articleTags Теги статьи.
+     * @param array $people Люди с полями userId, name, tags и currentReviews.
+     * 
+     * @return array Отсортированный список людей с совпавшими тегами,
+     *               количеством совпадений и текущей загрузкой.
      */
     public function matchTags(array $articleTags, array $people): array
     {
@@ -20,6 +24,7 @@ class TagMatcher
                 array_unique($person['tags'] ?? [])
             );
 
+            // Находим совпавшие теги
             $matchedTags = array_values(
                 array_intersect($articleTags, $personTags)
             );
@@ -29,11 +34,17 @@ class TagMatcher
                 'name' => $person['name'] ?? '',
                 'matchedTags' => $matchedTags,
                 'score' => count($matchedTags),
+
+                'currentReviews' => (int) ($person['currentReviews'] ?? 0),
             ];
         }
 
         usort($result, function ($a, $b) {
-            return $b['score'] <=> $a['score'];
+            if ($a['score'] !== $b['score']) {
+                return $b['score'] <=> $a['score'];
+            }
+
+            return $a['currentReviews'] <=> $b['currentReviews'];
         });
 
         return $result;
