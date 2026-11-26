@@ -71,4 +71,23 @@ class TagMatcherTest extends TestCase
 
         self::assertSame(0, $result[0]['score']);
     }
+
+    public function testMatchesSynonymsAndTranslations(): void
+    {
+        $matcher = new TagMatcher([
+            [
+                'id' => 'machine_learning',
+                'name' => ['ru' => 'машинное обучение', 'en' => 'machine learning'],
+                'synonyms' => ['ML', 'МО'],
+            ],
+        ]);
+
+        $result = $matcher->matchTags(
+            ['ML'],
+            [['userId' => 1, 'tags' => ['машинное обучение']]]
+        );
+
+        self::assertSame(1, $result[0]['score']);
+        self::assertSame(['machine_learning'], $result[0]['matchedTags']);
+    }
 }
