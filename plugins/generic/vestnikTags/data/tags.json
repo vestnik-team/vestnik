@@ -1,0 +1,1283 @@
+[
+  {
+    "number": 1,
+    "id": "machine_learning",
+    "category": "Искусственный интеллект и машинное обучение",
+    "name": {
+      "ru": "машинное обучение",
+      "en": "machine learning"
+    },
+    "synonyms": [
+      "ML",
+      "МО",
+      "автоматизированное машинное обучение",
+      "AutoML",
+      "обучение с учителем",
+      "supervised learning",
+      "обучение без учителя",
+      "unsupervised learning",
+      "трансферное обучение",
+      "transfer learning",
+      "дообучение",
+      "fine-tuning",
+      "few-shot",
+      "предобученные модели",
+      "pre-trained models"
+    ]
+  },
+  {
+    "number": 2,
+    "id": "deep_learning",
+    "category": "Искусственный интеллект и машинное обучение",
+    "name": {
+      "ru": "глубокое обучение",
+      "en": "deep learning"
+    },
+    "synonyms": [
+      "DL",
+      "глубинное обучение",
+      "глубокие нейронные сети",
+      "deep neural networks"
+    ]
+  },
+  {
+    "number": 3,
+    "id": "neural_networks",
+    "category": "Искусственный интеллект и машинное обучение",
+    "name": {
+      "ru": "нейронные сети",
+      "en": "neural networks"
+    },
+    "synonyms": [
+      "NN",
+      "ANN",
+      "нейросети",
+      "ИНС",
+      "искусственные нейронные сети",
+      "нейросетевые модели",
+      "нейросетевые методы",
+      "многослойный перцептрон",
+      "MLP",
+      "сверточные нейронные сети",
+      "convolutional neural networks",
+      "CNN",
+      "U-Net",
+      "рекуррентные нейронные сети",
+      "recurrent neural networks",
+      "RNN",
+      "LSTM",
+      "трансформеры",
+      "transformer",
+      "BERT",
+      "RuBERT",
+      "механизм внимания",
+      "attention mechanism"
+    ]
+  },
+  {
+    "number": 4,
+    "id": "large_language_models",
+    "category": "Искусственный интеллект и машинное обучение",
+    "name": {
+      "ru": "большие языковые модели",
+      "en": "large language models"
+    },
+    "synonyms": [
+      "LLM",
+      "БЯМ",
+      "большая языковая модель",
+      "языковые модели",
+      "language models",
+      "генеративные модели",
+      "generative AI",
+      "LLM-as-a-Judge",
+      "function calling"
+    ]
+  },
+  {
+    "number": 5,
+    "id": "rag_and_question_answering",
+    "category": "Искусственный интеллект и машинное обучение",
+    "name": {
+      "ru": "RAG и вопросно-ответные системы",
+      "en": "RAG and question answering"
+    },
+    "synonyms": [
+      "RAG",
+      "retrieval-augmented generation",
+      "вопросно-ответная система",
+      "QA",
+      "QA-системы",
+      "question answering",
+      "чат-бот",
+      "chatbot",
+      "векторная база данных",
+      "vector database",
+      "векторизация текста"
+    ]
+  },
+  {
+    "number": 6,
+    "id": "artificial_intelligence",
+    "category": "Искусственный интеллект и машинное обучение",
+    "name": {
+      "ru": "искусственный интеллект",
+      "en": "artificial intelligence"
+    },
+    "synonyms": [
+      "AI",
+      "ИИ",
+      "интеллектуальные системы",
+      "интеллектуальные информационные системы",
+      "интеллектуальный помощник",
+      "экспертные системы",
+      "expert systems",
+      "системы, основанные на знаниях",
+      "knowledge-based systems"
+    ]
+  },
+  {
+    "number": 7,
+    "id": "explainable_ai",
+    "category": "Искусственный интеллект и машинное обучение",
+    "name": {
+      "ru": "объяснимый ИИ",
+      "en": "explainable AI"
+    },
+    "synonyms": [
+      "XAI",
+      "интерпретируемые модели ИИ",
+      "интерпретируемость",
+      "explainability",
+      "interpretable models",
+      "символьная регрессия"
+    ]
+  },
+  {
+    "number": 8,
+    "id": "model_optimization_and_compression",
+    "category": "Искусственный интеллект и машинное обучение",
+    "name": {
+      "ru": "оптимизация и сжатие моделей",
+      "en": "model optimization and compression"
+    },
+    "synonyms": [
+      "квантование",
+      "quantization",
+      "прунинг",
+      "pruning",
+      "оптимизация инференса",
+      "inference optimization",
+      "ускорение вывода моделей"
+    ]
+  },
+  {
+    "number": 9,
+    "id": "classification_and_clustering",
+    "category": "Искусственный интеллект и машинное обучение",
+    "name": {
+      "ru": "классификация и кластеризация",
+      "en": "classification and clustering"
+    },
+    "synonyms": [
+      "кластерный анализ",
+      "cluster analysis",
+      "k-means",
+      "метод k-средних",
+      "CLOPE",
+      "SVM",
+      "метод опорных векторов",
+      "логистическая регрессия",
+      "kNN",
+      "k-nearest neighbors",
+      "ансамблевые методы",
+      "ensemble methods",
+      "случайный лес",
+      "random forest",
+      "бустинг",
+      "boosting",
+      "бэггинг",
+      "bagging"
+    ]
+  },
+  {
+    "number": 10,
+    "id": "feature_selection_and_engineering",
+    "category": "Искусственный интеллект и машинное обучение",
+    "name": {
+      "ru": "отбор и построение признаков",
+      "en": "feature selection and engineering"
+    },
+    "synonyms": [
+      "feature selection",
+      "feature engineering",
+      "уменьшение размерности",
+      "dimensionality reduction"
+    ]
+  },
+  {
+    "number": 11,
+    "id": "intelligent_agents_and_multi_agent_systems",
+    "category": "Искусственный интеллект и машинное обучение",
+    "name": {
+      "ru": "интеллектуальные агенты и мультиагентные системы",
+      "en": "intelligent agents and multi-agent systems"
+    },
+    "synonyms": [
+      "многоагентные системы",
+      "мультиагентные системы",
+      "MAS",
+      "агентное моделирование",
+      "agent-based modeling",
+      "агентно-сервисный подход",
+      "педагогический агент",
+      "pedagogical agent",
+      "мультиагентная нейрокогнитивная архитектура"
+    ]
+  },
+  {
+    "number": 12,
+    "id": "natural_language_processing",
+    "category": "Обработка текстов и представление знаний",
+    "name": {
+      "ru": "обработка естественного языка",
+      "en": "natural language processing"
+    },
+    "synonyms": [
+      "NLP",
+      "ОЕЯ",
+      "компьютерная лингвистика",
+      "computational linguistics",
+      "обработка текстов",
+      "text processing",
+      "text mining",
+      "анализ текстов",
+      "автоматический анализ текстов",
+      "автоматическое реферирование",
+      "суммаризация текста",
+      "text summarization",
+      "платформа TXM",
+      "корпусный анализ",
+      "corpus analysis"
+    ]
+  },
+  {
+    "number": 13,
+    "id": "sentiment_analysis",
+    "category": "Обработка текстов и представление знаний",
+    "name": {
+      "ru": "анализ тональности",
+      "en": "sentiment analysis"
+    },
+    "synonyms": [
+      "сентимент-анализ",
+      "определение тональности",
+      "классификация эмоций",
+      "emotion classification",
+      "opinion mining"
+    ]
+  },
+  {
+    "number": 14,
+    "id": "argument_mining",
+    "category": "Обработка текстов и представление знаний",
+    "name": {
+      "ru": "анализ аргументации",
+      "en": "argument mining"
+    },
+    "synonyms": [
+      "argumentation analysis",
+      "классификация аргументов",
+      "генерация критических вопросов",
+      "схемы аргументации",
+      "Walton argumentation schemes"
+    ]
+  },
+  {
+    "number": 15,
+    "id": "information_and_knowledge_extraction",
+    "category": "Обработка текстов и представление знаний",
+    "name": {
+      "ru": "извлечение информации и знаний",
+      "en": "information and knowledge extraction"
+    },
+    "synonyms": [
+      "information extraction",
+      "извлечение знаний",
+      "извлечение терминов",
+      "term extraction",
+      "извлечение отношений",
+      "relation extraction",
+      "извлечение именованных сущностей",
+      "named entity recognition",
+      "NER"
+    ]
+  },
+  {
+    "number": 16,
+    "id": "ontologies",
+    "category": "Обработка текстов и представление знаний",
+    "name": {
+      "ru": "онтологии",
+      "en": "ontologies"
+    },
+    "synonyms": [
+      "ontology",
+      "онтология",
+      "онтологическая модель",
+      "онтологическое моделирование",
+      "ontology modeling",
+      "OWL",
+      "SPARQL",
+      "SWRL",
+      "Protégé",
+      "редактор онтологии",
+      "ontology editor",
+      "семантические системы",
+      "semantic systems"
+    ]
+  },
+  {
+    "number": 17,
+    "id": "knowledge_representation",
+    "category": "Обработка текстов и представление знаний",
+    "name": {
+      "ru": "представление знаний",
+      "en": "knowledge representation"
+    },
+    "synonyms": [
+      "графы знаний",
+      "knowledge graphs",
+      "семантическая сеть",
+      "semantic network",
+      "базы знаний",
+      "knowledge bases",
+      "интеграция знаний"
+    ]
+  },
+  {
+    "number": 18,
+    "id": "semantic_search_and_digital_libraries",
+    "category": "Обработка текстов и представление знаний",
+    "name": {
+      "ru": "семантический поиск и электронные библиотеки",
+      "en": "semantic search and digital libraries"
+    },
+    "synonyms": [
+      "информационный поиск",
+      "information retrieval",
+      "поисковые системы",
+      "search engines",
+      "векторный поиск",
+      "vector search",
+      "электронные библиотеки",
+      "digital libraries",
+      "электронные коллекции",
+      "цифровые коллекции"
+    ]
+  },
+  {
+    "number": 19,
+    "id": "recommender_systems",
+    "category": "Обработка текстов и представление знаний",
+    "name": {
+      "ru": "рекомендательные системы",
+      "en": "recommender systems"
+    },
+    "synonyms": [
+      "recommendation systems",
+      "персонализированные рекомендации",
+      "personalized recommendations",
+      "коллаборативная фильтрация",
+      "collaborative filtering"
+    ]
+  },
+  {
+    "number": 20,
+    "id": "social_network_and_social_media_analysis",
+    "category": "Обработка текстов и представление знаний",
+    "name": {
+      "ru": "анализ социальных сетей",
+      "en": "social network and social media analysis"
+    },
+    "synonyms": [
+      "анализ текстов социальных сетей",
+      "social media text analysis",
+      "социальные сети",
+      "social networks",
+      "выделение сообществ",
+      "community detection",
+      "импорт данных из социальных сетей",
+      "«ВКонтакте»"
+    ]
+  },
+  {
+    "number": 21,
+    "id": "computer_vision",
+    "category": "Компьютерное зрение, сигналы и медицинские данные",
+    "name": {
+      "ru": "компьютерное зрение",
+      "en": "computer vision"
+    },
+    "synonyms": [
+      "CV",
+      "машинное зрение",
+      "распознавание образов",
+      "pattern recognition",
+      "распознавание объектов",
+      "object recognition",
+      "сегментация изображений",
+      "image segmentation",
+      "семантическая сегментация",
+      "распознавание лиц",
+      "face recognition",
+      "дополненная реальность",
+      "AR"
+    ]
+  },
+  {
+    "number": 22,
+    "id": "image_processing",
+    "category": "Компьютерное зрение, сигналы и медицинские данные",
+    "name": {
+      "ru": "обработка изображений",
+      "en": "image processing"
+    },
+    "synonyms": [
+      "цифровая обработка изображений",
+      "сжатие изображений",
+      "image compression",
+      "деконволюция",
+      "deconvolution",
+      "JPEG",
+      "выделение краев",
+      "edge detection",
+      "томография",
+      "tomography"
+    ]
+  },
+  {
+    "number": 23,
+    "id": "optical_character_recognition",
+    "category": "Компьютерное зрение, сигналы и медицинские данные",
+    "name": {
+      "ru": "оптическое распознавание текста",
+      "en": "optical character recognition"
+    },
+    "synonyms": [
+      "OCR",
+      "распознавание текста",
+      "text recognition",
+      "Tesseract",
+      "PaddleOCR",
+      "EasyOCR",
+      "распознавание рукописного текста"
+    ]
+  },
+  {
+    "number": 24,
+    "id": "signal_processing",
+    "category": "Компьютерное зрение, сигналы и медицинские данные",
+    "name": {
+      "ru": "обработка сигналов",
+      "en": "signal processing"
+    },
+    "synonyms": [
+      "цифровая обработка сигналов",
+      "ЦОС",
+      "DSP",
+      "digital signal processing",
+      "спектральный анализ",
+      "spectral analysis",
+      "фильтрация сигналов",
+      "обработка аудиосигналов",
+      "audio processing"
+    ]
+  },
+  {
+    "number": 25,
+    "id": "eeg_and_neuroinformatics",
+    "category": "Компьютерное зрение, сигналы и медицинские данные",
+    "name": {
+      "ru": "ЭЭГ и нейроинформатика",
+      "en": "EEG and neuroinformatics"
+    },
+    "synonyms": [
+      "электроэнцефалография",
+      "электроэнцефалограмма",
+      "EEG",
+      "интерфейс «мозг – компьютер»",
+      "brain-computer interface",
+      "BCI",
+      "ИМК",
+      "вызванные потенциалы",
+      "анализ независимых компонент",
+      "ICA"
+    ]
+  },
+  {
+    "number": 26,
+    "id": "medical_informatics",
+    "category": "Компьютерное зрение, сигналы и медицинские данные",
+    "name": {
+      "ru": "медицинская информатика",
+      "en": "medical informatics"
+    },
+    "synonyms": [
+      "digital health",
+      "цифровая медицина",
+      "медицинские информационные системы",
+      "обработка медицинских данных",
+      "поддержка врачебных решений",
+      "clinical decision support",
+      "диагностика",
+      "персонализированная медицина"
+    ]
+  },
+  {
+    "number": 27,
+    "id": "data_compression",
+    "category": "Компьютерное зрение, сигналы и медицинские данные",
+    "name": {
+      "ru": "сжатие данных",
+      "en": "data compression"
+    },
+    "synonyms": [
+      "компрессия данных",
+      "алгоритмы сжатия",
+      "кодирование",
+      "адаптивное кодирование",
+      "энтропийное кодирование",
+      "entropy coding"
+    ]
+  },
+  {
+    "number": 28,
+    "id": "information_systems",
+    "category": "Информационные системы и данные",
+    "name": {
+      "ru": "информационные системы",
+      "en": "information systems"
+    },
+    "synonyms": [
+      "ИС",
+      "проектирование информационных систем",
+      "information system design",
+      "корпоративные информационные системы",
+      "enterprise information systems",
+      "автоматизация предприятий",
+      "моделирование бизнес-процессов",
+      "business process modeling",
+      "BPMN",
+      "бизнес-процессы"
+    ]
+  },
+  {
+    "number": 29,
+    "id": "decision_support_systems",
+    "category": "Информационные системы и данные",
+    "name": {
+      "ru": "системы поддержки принятия решений",
+      "en": "decision support systems"
+    },
+    "synonyms": [
+      "СППР",
+      "DSS",
+      "поддержка принятия решений",
+      "decision support",
+      "ситуационное управление"
+    ]
+  },
+  {
+    "number": 30,
+    "id": "databases_and_dbms",
+    "category": "Информационные системы и данные",
+    "name": {
+      "ru": "базы данных и СУБД",
+      "en": "databases and DBMS"
+    },
+    "synonyms": [
+      "БД",
+      "СУБД",
+      "database",
+      "DBMS",
+      "SQL",
+      "реляционные базы данных",
+      "relational databases",
+      "PostgreSQL",
+      "NoSQL",
+      "графовые базы данных",
+      "graph databases",
+      "Neo4j",
+      "объектно-ориентированная СУБД",
+      "индексы",
+      "learned index"
+    ]
+  },
+  {
+    "number": 31,
+    "id": "distributed_systems_and_fault_tolerance",
+    "category": "Информационные системы и данные",
+    "name": {
+      "ru": "распределённые системы и отказоустойчивость",
+      "en": "distributed systems and fault tolerance"
+    },
+    "synonyms": [
+      "distributed systems",
+      "репликация",
+      "replication",
+      "отказоустойчивость",
+      "fault tolerance",
+      "высокая доступность",
+      "high availability",
+      "теорема CAP",
+      "согласованность",
+      "consistency"
+    ]
+  },
+  {
+    "number": 32,
+    "id": "geographic_information_systems",
+    "category": "Информационные системы и данные",
+    "name": {
+      "ru": "геоинформационные системы",
+      "en": "geographic information systems"
+    },
+    "synonyms": [
+      "ГИС",
+      "GIS",
+      "геоинформатика",
+      "geoinformatics",
+      "геоинформационные технологии",
+      "пространственные данные",
+      "spatial data",
+      "пространственный анализ",
+      "OpenStreetMap",
+      "ГИС ЖКХ"
+    ]
+  },
+  {
+    "number": 33,
+    "id": "web_services_and_apis",
+    "category": "Информационные системы и данные",
+    "name": {
+      "ru": "веб-сервисы и API",
+      "en": "web services and APIs"
+    },
+    "synonyms": [
+      "веб-сервис",
+      "web service",
+      "REST API",
+      "gRPC",
+      "SOA",
+      "сервис-ориентированная архитектура",
+      "WPS",
+      "Web Processing Service",
+      "композиция сервисов"
+    ]
+  },
+  {
+    "number": 34,
+    "id": "digital_platforms_e_government_and_finance",
+    "category": "Информационные системы и данные",
+    "name": {
+      "ru": "цифровые платформы, электронное управление и экономика",
+      "en": "digital platforms, e-government and finance"
+    },
+    "synonyms": [
+      "цифровая платформа",
+      "digital platform",
+      "госуправление",
+      "e-government",
+      "цифровая трансформация",
+      "digital transformation",
+      "электронный документооборот",
+      "document management",
+      "электронный бюджет",
+      "финансовые рынки",
+      "financial markets",
+      "инвестиционный анализ",
+      "экономико-математическое моделирование",
+      "социально-экономические системы"
+    ]
+  },
+  {
+    "number": 35,
+    "id": "data_analysis_and_integration",
+    "category": "Информационные системы и данные",
+    "name": {
+      "ru": "анализ и интеграция данных",
+      "en": "data analysis and integration"
+    },
+    "synonyms": [
+      "анализ данных",
+      "data analysis",
+      "интеллектуальный анализ данных",
+      "data mining",
+      "большие данные",
+      "big data",
+      "интеграция данных",
+      "data integration",
+      "предварительная обработка данных",
+      "data preprocessing",
+      "усвоение данных",
+      "data assimilation"
+    ]
+  },
+  {
+    "number": 36,
+    "id": "data_and_graph_visualization",
+    "category": "Информационные системы и данные",
+    "name": {
+      "ru": "визуализация данных и графов",
+      "en": "data and graph visualization"
+    },
+    "synonyms": [
+      "визуализация",
+      "visualization",
+      "визуализация графа",
+      "graph drawing",
+      "отрисовка графа",
+      "визуализация коллекций документов",
+      "визуализация синтаксических структур"
+    ]
+  },
+  {
+    "number": 37,
+    "id": "software_development",
+    "category": "Программная инженерия",
+    "name": {
+      "ru": "разработка программного обеспечения",
+      "en": "software development"
+    },
+    "synonyms": [
+      "software engineering",
+      "программная инженерия",
+      "разработка ПО",
+      "проектирование ПО",
+      "software design",
+      "программный комплекс",
+      "жизненный цикл ПО"
+    ]
+  },
+  {
+    "number": 38,
+    "id": "software_testing_and_verification",
+    "category": "Программная инженерия",
+    "name": {
+      "ru": "тестирование и верификация ПО",
+      "en": "software testing and verification"
+    },
+    "synonyms": [
+      "тестирование ПО",
+      "автоматизированное тестирование",
+      "test automation",
+      "функциональное тестирование",
+      "Selenium WebDriver",
+      "тестирование веб-приложений",
+      "системы тестирования",
+      "верификация программ",
+      "program verification",
+      "формальная верификация",
+      "formal verification"
+    ]
+  },
+  {
+    "number": 39,
+    "id": "debugging_and_static_analysis",
+    "category": "Программная инженерия",
+    "name": {
+      "ru": "отладка и статический анализ",
+      "en": "debugging and static analysis"
+    },
+    "synonyms": [
+      "автоматизированная отладка",
+      "automated debugging",
+      "статический анализ кода",
+      "static analysis",
+      "поиск ошибок",
+      "анализ по трассе"
+    ]
+  },
+  {
+    "number": 40,
+    "id": "ides_and_developer_tools",
+    "category": "Программная инженерия",
+    "name": {
+      "ru": "среды разработки и инструменты программиста",
+      "en": "IDEs and developer tools"
+    },
+    "synonyms": [
+      "IDE",
+      "интегрированная среда разработки",
+      "рефакторинг",
+      "refactoring",
+      "автодополнение кода",
+      "code completion",
+      "IntelliJ",
+      "PyCharm",
+      "системы контроля версий",
+      "version control"
+    ]
+  },
+  {
+    "number": 41,
+    "id": "programming_languages_compilers_and_formal_languages",
+    "category": "Программная инженерия",
+    "name": {
+      "ru": "языки программирования, компиляторы и формальные языки",
+      "en": "programming languages, compilers and formal languages"
+    },
+    "synonyms": [
+      "языки программирования",
+      "programming languages",
+      "парадигмы программирования",
+      "programming paradigms",
+      "предметно-ориентированные языки",
+      "DSL",
+      "domain-specific languages",
+      "компилятор",
+      "compiler",
+      "трансляторы",
+      "оптимизация программ",
+      "program optimization",
+      "LLVM",
+      "SSA",
+      "static single assignment",
+      "escape-анализ",
+      "Python",
+      "Kotlin",
+      "Golang",
+      "JavaScript",
+      "формальные грамматики",
+      "formal grammars",
+      "теория автоматов",
+      "automata theory",
+      "процесс-ориентированное программирование",
+      "process-oriented programming"
+    ]
+  },
+  {
+    "number": 42,
+    "id": "mobile_development",
+    "category": "Программная инженерия",
+    "name": {
+      "ru": "мобильная разработка",
+      "en": "mobile development"
+    },
+    "synonyms": [
+      "мобильные приложения",
+      "mobile apps",
+      "Android",
+      "iOS",
+      "мобильные устройства",
+      "портирование ПО",
+      "кроссплатформенная разработка"
+    ]
+  },
+  {
+    "number": 43,
+    "id": "cloud_computing_and_containerization",
+    "category": "Программная инженерия",
+    "name": {
+      "ru": "облачные вычисления и контейнеризация",
+      "en": "cloud computing and containerization"
+    },
+    "synonyms": [
+      "облачные сервисы",
+      "cloud services",
+      "облачные технологии",
+      "бессерверная архитектура",
+      "serverless",
+      "Docker",
+      "контейнеризация",
+      "микросервисы",
+      "microservices"
+    ]
+  },
+  {
+    "number": 44,
+    "id": "web_development",
+    "category": "Программная инженерия",
+    "name": {
+      "ru": "веб-разработка",
+      "en": "web development"
+    },
+    "synonyms": [
+      "веб-технологии",
+      "web technologies",
+      "веб-приложение",
+      "web application",
+      "веб-интерфейс",
+      "клиент-серверная архитектура",
+      "client-server",
+      "frontend",
+      "backend"
+    ]
+  },
+  {
+    "number": 45,
+    "id": "parallel_and_high_performance_computing",
+    "category": "Вычисления, моделирование и системный анализ",
+    "name": {
+      "ru": "параллельные и высокопроизводительные вычисления",
+      "en": "parallel and high-performance computing"
+    },
+    "synonyms": [
+      "HPC",
+      "ВПВ",
+      "параллельные вычисления",
+      "parallel computing",
+      "параллельное программирование",
+      "parallel programming",
+      "суперкомпьютер",
+      "supercomputer",
+      "MPI",
+      "OpenMP",
+      "GPU",
+      "GPU computing",
+      "CUDA",
+      "векторизация",
+      "vectorization",
+      "распределенные вычисления",
+      "фрагментированное программирование",
+      "система LuNA",
+      "Q-детерминант",
+      "Q-determinant"
+    ]
+  },
+  {
+    "number": 46,
+    "id": "algorithms_and_numerical_methods",
+    "category": "Вычисления, моделирование и системный анализ",
+    "name": {
+      "ru": "алгоритмы и численные методы",
+      "en": "algorithms and numerical methods"
+    },
+    "synonyms": [
+      "численные методы",
+      "численные алгоритмы",
+      "numerical algorithms",
+      "вычислительная математика",
+      "computational mathematics",
+      "теория алгоритмов",
+      "theory of algorithms",
+      "сложность алгоритмов",
+      "вычислительная сложность",
+      "computational complexity",
+      "теория графов",
+      "graph theory",
+      "обратные задачи",
+      "inverse problems",
+      "метод конечных элементов",
+      "finite element method",
+      "интервальные вычисления",
+      "interval computations",
+      "интервальный анализ"
+    ]
+  },
+  {
+    "number": 47,
+    "id": "modeling_and_simulation",
+    "category": "Вычисления, моделирование и системный анализ",
+    "name": {
+      "ru": "математическое и компьютерное моделирование",
+      "en": "modeling and simulation"
+    },
+    "synonyms": [
+      "компьютерное моделирование",
+      "computer simulation",
+      "имитационное моделирование",
+      "simulation modeling",
+      "математические модели",
+      "mathematical modeling",
+      "численное моделирование",
+      "цифровой двойник",
+      "digital twin",
+      "климатическое моделирование",
+      "climate modeling",
+      "прогнозирование природных процессов"
+    ]
+  },
+  {
+    "number": 48,
+    "id": "optimization",
+    "category": "Вычисления, моделирование и системный анализ",
+    "name": {
+      "ru": "оптимизация",
+      "en": "optimization"
+    },
+    "synonyms": [
+      "методы оптимизации",
+      "optimization methods",
+      "математическое программирование",
+      "mathematical programming",
+      "многопараметрическая оптимизация",
+      "генетический алгоритм",
+      "genetic algorithm",
+      "оптимизация производительности",
+      "performance optimization"
+    ]
+  },
+  {
+    "number": 49,
+    "id": "systems_analysis",
+    "category": "Вычисления, моделирование и системный анализ",
+    "name": {
+      "ru": "системный анализ",
+      "en": "systems analysis"
+    },
+    "synonyms": [
+      "системное моделирование",
+      "systems modeling",
+      "анализ систем",
+      "организационно-технические системы",
+      "organizational and technical systems",
+      "теория конфликтов",
+      "conflict theory",
+      "показатели эффективности",
+      "efficiency indicators",
+      "управление рисками",
+      "risk management",
+      "архитектура информационных систем"
+    ]
+  },
+  {
+    "number": 50,
+    "id": "fuzzy_models_and_expert_estimation",
+    "category": "Вычисления, моделирование и системный анализ",
+    "name": {
+      "ru": "нечёткие модели и экспертные оценки",
+      "en": "fuzzy models and expert estimation"
+    },
+    "synonyms": [
+      "экспертные оценки",
+      "expert estimates",
+      "нечёткая модель",
+      "fuzzy model",
+      "нечёткая логика",
+      "fuzzy logic",
+      "субъективная вероятность",
+      "subjective probability",
+      "проверка согласованности оценок"
+    ]
+  },
+  {
+    "number": 51,
+    "id": "information_security",
+    "category": "Информационная безопасность и сети",
+    "name": {
+      "ru": "информационная безопасность",
+      "en": "information security"
+    },
+    "synonyms": [
+      "ИБ",
+      "кибербезопасность",
+      "cybersecurity",
+      "защита информации",
+      "information protection",
+      "инциденты информационной безопасности",
+      "управление рисками ИБ"
+    ]
+  },
+  {
+    "number": 52,
+    "id": "cryptography",
+    "category": "Информационная безопасность и сети",
+    "name": {
+      "ru": "криптография",
+      "en": "cryptography"
+    },
+    "synonyms": [
+      "шифрование",
+      "encryption",
+      "криптографический алгоритм",
+      "криптографические протоколы",
+      "cryptographic protocols",
+      "эллиптические кривые",
+      "elliptic curves",
+      "протокол Диффи – Хеллмана",
+      "электронная подпись"
+    ]
+  },
+  {
+    "number": 53,
+    "id": "digital_watermarking_and_steganography",
+    "category": "Информационная безопасность и сети",
+    "name": {
+      "ru": "цифровые водяные знаки и стеганография",
+      "en": "digital watermarking and steganography"
+    },
+    "synonyms": [
+      "цифровая подпись изображений",
+      "digital signature",
+      "водяной знак",
+      "цифровой водяной знак",
+      "watermark",
+      "стеганография",
+      "steganography",
+      "стеганоанализ",
+      "steganalysis"
+    ]
+  },
+  {
+    "number": 54,
+    "id": "random_number_generators",
+    "category": "Информационная безопасность и сети",
+    "name": {
+      "ru": "генераторы случайных чисел",
+      "en": "random number generators"
+    },
+    "synonyms": [
+      "генератор случайных чисел",
+      "ГСЧ",
+      "RNG",
+      "статистические тесты",
+      "statistical tests",
+      "тесты случайности",
+      "randomness tests",
+      "тесты NIST",
+      "TestU01"
+    ]
+  },
+  {
+    "number": 55,
+    "id": "intrusion_and_attack_detection",
+    "category": "Информационная безопасность и сети",
+    "name": {
+      "ru": "обнаружение вторжений и сетевых атак",
+      "en": "intrusion and attack detection"
+    },
+    "synonyms": [
+      "IDS",
+      "обнаружение вторжений",
+      "intrusion detection",
+      "обнаружение атак",
+      "attack detection",
+      "анализ угроз",
+      "threat analysis",
+      "сетевые атаки",
+      "network attacks",
+      "веб-атаки",
+      "анализ сетевого трафика",
+      "network traffic analysis"
+    ]
+  },
+  {
+    "number": 56,
+    "id": "computer_networks_and_communications",
+    "category": "Информационная безопасность и сети",
+    "name": {
+      "ru": "компьютерные сети и связь",
+      "en": "computer networks and communications"
+    },
+    "synonyms": [
+      "сети передачи данных",
+      "IoT",
+      "интернет вещей",
+      "Internet of Things",
+      "умные устройства",
+      "балансировка нагрузки",
+      "load balancing",
+      "теория массового обслуживания",
+      "queueing theory",
+      "надежность сетей",
+      "системы связи",
+      "радиоканал",
+      "цифровая связь",
+      "digital communications"
+    ]
+  },
+  {
+    "number": 57,
+    "id": "educational_technology",
+    "category": "Смежные направления",
+    "name": {
+      "ru": "информационные технологии в образовании",
+      "en": "educational technology"
+    },
+    "synonyms": [
+      "EdTech",
+      "электронное обучение",
+      "e-learning",
+      "цифровое образование",
+      "интеллектуальные обучающие системы",
+      "intelligent tutoring systems",
+      "информационно-образовательная среда",
+      "электронное портфолио",
+      "e-portfolio",
+      "цифровой профиль",
+      "контроль знаний",
+      "knowledge assessment",
+      "обучение программированию",
+      "игрофикация",
+      "gamification"
+    ]
+  },
+  {
+    "number": 58,
+    "id": "robotics_and_unmanned_systems",
+    "category": "Смежные направления",
+    "name": {
+      "ru": "робототехника и беспилотные системы",
+      "en": "robotics and unmanned systems"
+    },
+    "synonyms": [
+      "роботы",
+      "robots",
+      "БПЛА",
+      "UAV",
+      "дроны",
+      "квадрокоптер",
+      "ROS",
+      "Robot Operating System",
+      "SLAM",
+      "управление движением"
+    ]
+  },
+  {
+    "number": 59,
+    "id": "automation_control_and_measuring_systems",
+    "category": "Смежные направления",
+    "name": {
+      "ru": "автоматизация, управление и измерительные системы",
+      "en": "automation, control and measuring systems"
+    },
+    "synonyms": [
+      "АСУ ТП",
+      "SCADA",
+      "ICS",
+      "промышленная автоматизация",
+      "industrial automation",
+      "автоматизированные системы управления",
+      "теория управления",
+      "control theory",
+      "системы автоматического управления",
+      "оптимальное управление",
+      "информационно-измерительные системы",
+      "ИИС",
+      "датчики",
+      "sensors"
+    ]
+  },
+  {
+    "number": 60,
+    "id": "bioinformatics",
+    "category": "Смежные направления",
+    "name": {
+      "ru": "биоинформатика",
+      "en": "bioinformatics"
+    },
+    "synonyms": [
+      "анализ геномов",
+      "геномика",
+      "genomics",
+      "анализ последовательностей",
+      "sequence analysis",
+      "секвенирование",
+      "sequencing",
+      "масс-спектрометрия",
+      "омиксные данные"
+    ]
+  }
+]

@@ -3,7 +3,8 @@ set -eu
 
 # List repository plugins as category/directory.
 set -- \
-    generic/vestnikExample
+    generic/vestnikExample \
+    generic/vestnikTags
 
 fail() {
     printf '%s\n' "$1" >&2
