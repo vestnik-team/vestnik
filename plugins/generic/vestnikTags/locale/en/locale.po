@@ -1,0 +1,11 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.generic.vestnikTags.displayName"
+msgstr "Vestnik: tags and reviewer matching"
+
+msgid "plugins.generic.vestnikTags.description"
+msgstr "Article tags and reviewer matching by shared tags."

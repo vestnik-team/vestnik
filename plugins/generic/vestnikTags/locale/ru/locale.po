@@ -1,0 +1,11 @@
+msgid ""
+msgstr ""
+"Language: ru\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.generic.vestnikTags.displayName"
+msgstr "Вестник — теги и подбор рецензентов"
+
+msgid "plugins.generic.vestnikTags.description"
+msgstr "Теги статей и подбор рецензентов по совпавшим тегам."
